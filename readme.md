@@ -1,3 +1,9 @@
+# Oil Blend Project
+
+My partner wants a tool to save and share essential oil blend recipes.  I wanted learn Laravel and hence this project.
+
+## Laravel Readme
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

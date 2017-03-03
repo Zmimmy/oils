@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ * Display All Tasks
+ */
+Route::get('/oils', function () {
+	//
+	return view('oils-list');
+});
+
+/**
+ * Add A New Task
+ */
+Route::post('/oils/add', function (Request $request) {
+	//
+});
