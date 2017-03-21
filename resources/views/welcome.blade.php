@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -34,7 +35,8 @@
                                 Oils & Blends
                             </div>
                             <div class="links">
-                                <a href="/oils">Oils</a>
+                                <a href="/oils/list">Oils</a>
+                                <a href="/oils/add">Add Oil</a>
                                 <a href="#">Blends</a>
                             </div>
                         </div>

@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
 </head>
 <body>
 <div class="flex-center position-ref full-height">
@@ -34,19 +35,27 @@
                         Oils
                     </div>
                     <div class="links">
-                        <a href="/oils">Oils</a>
+                        <a href="/oils/list">Oils</a>
+                        <a href="/oils/add">Add Oil</a>
                         <a href="#">Blends</a>
                     </div>
                 </div>
             </div>
-            <div class="row oil-list">
+            @if (Route::is('oil-add'))
+            <div class="row add-oil">
                 <div class="col-md-8 col-md-offset-2">
                     @yield('addoil')
                 </div>
             </div>
-
-
-
+            @endif
+            @if (Route::is('oil-list'))
+            <div class="row oil-list">
+                <div class="col-md-8 col-md-offset-2">
+                    @yield('oillist')
+                </div>
+            </div>
+            @endif
+        </div>
     </div>
 
     <div class="footer">
